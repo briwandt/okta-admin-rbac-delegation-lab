@@ -102,3 +102,76 @@ Returned authorization code was exchanged for ID Token.
 📸 Token Preview
 
 ![Token Groups Preview](images/token-preview-groups.png)
+
+## 🔍 Step 6 — Token Validation
+
+Using Okta Token Preview and JWT decoding, verified the ID token contains the RBAC group claim.
+
+📸 Decoded ID Token (Payload)
+
+![Decoded ID Token with RBAC Claim](images/token-with-group-claim.png)
+🧾 Example Token Payload
+{
+  "sub": "00uzx9iyow9tKeo5u697",
+  "email": "briannawandt@gmail.com",
+  "preferred_username": "briannawandt@gmail.com",
+  "groups": ["RBAC-Viewers"]
+}
+✅ Validation Results
+
+✔ Authorization Code flow working
+✔ ID Token successfully issued
+✔ Custom groups claim injected
+✔ RBAC group value matches expected user role
+✔ Regex filter correctly limits claim output
+
+## 🛡️ Security Concepts Demonstrated
+
+OAuth 2.0 Authorization Code Flow
+
+OpenID Connect ID Tokens
+
+Custom Claims
+
+Role-Based Access Control
+
+JWT structure & validation
+
+Group filtering via regex
+
+Access Policy rule configuration
+
+## 📈 Why This Matters
+
+This lab simulates real-world identity architecture patterns used in:
+
+SaaS RBAC enforcement
+
+Enterprise SSO
+
+API Authorization
+
+Zero Trust access design
+
+It demonstrates the difference between:
+
+Authentication (who you are)
+
+Authorization (what you’re allowed to do)
+
+## 🧩 Next Enhancements
+
+Map RBAC groups to API scopes
+
+Enforce authorization in backend logic
+
+Implement Access Token validation
+
+Add policy rule restrictions per role
+
+Build sample protected API
+
+👩‍💻 Author
+
+Brianna Wandt
+Security Engineering | Identity & Access Management
