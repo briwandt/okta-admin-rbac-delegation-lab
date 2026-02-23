@@ -26,3 +26,16 @@ Custom groups claim is injected
 Application reads group claim
 
 Authorization logic is enforced based on group membership
+
+## 🏗️ Step 1 — Create OIDC Application
+
+Configured a Web Application using:
+
+Grant Type: Authorization Code
+
+Client Authentication: Client Secret
+
+Redirect URI: http://localhost:8080/authorization-code/callback
+
+📸 OIDC App Configuration
+![OIDC App Configuration](images/oidc-app-config.png)
