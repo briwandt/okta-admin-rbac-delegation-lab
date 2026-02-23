@@ -57,3 +57,13 @@ Users were assigned based on role.
 
 ![RBAC Groups](images/rbac-groups.png)
 
+## 🎯 Step 3 — Assign Groups to Application
+
+Each RBAC group was assigned to the OIDC app under Assignments → Groups.
+
+This ensures group membership can be evaluated during token issuance.
+
+📸 Application Group Assignments
+
+![App Group Assignments](images/app-group-assignments.png)
+
