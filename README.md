@@ -67,3 +67,22 @@ This ensures group membership can be evaluated during token issuance.
 
 ![App Group Assignments](images/app-group-assignments.png)
 
+## 🧾 Step 4 — Configure Custom Groups Claim
+
+Configured a custom claim in the Authorization Server:
+
+Name: groups
+
+Token Type: ID Token
+
+Value Type: Groups
+
+Filter: Matches regex ^RBAC-.*
+
+Included in: Any scope
+
+This dynamically injects only RBAC-related groups into the ID token.
+
+📸 Custom Claim Configuration
+![Groups Claim Configuration](images/groups-claim-config.png)
+
