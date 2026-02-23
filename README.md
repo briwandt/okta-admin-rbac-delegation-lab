@@ -192,6 +192,19 @@ sequenceDiagram
     Browser->>App: Send ID Token
     App->>App: Enforce RBAC Authorization
 ```
+## 🧠 Logical Component View
+
+```mermaid
+flowchart LR
+    A[User] --> B[Okta Sign-In]
+    B --> C[Authorization Server]
+    C -->|Authorization Code| D[Token Endpoint]
+    D -->|ID Token| E[Application]
+    C --> F[Custom Claim: groups]
+    F -->|Matches ^RBAC-.*| E
+    E -->|RBAC Enforcement| G[Protected Resources]
+```
+
 👩‍💻 Author
 
 Brianna Wandt
