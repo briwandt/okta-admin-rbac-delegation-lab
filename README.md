@@ -38,4 +38,21 @@ Client Authentication: Client Secret
 Redirect URI: http://localhost:8080/authorization-code/callback
 
 📸 OIDC App Configuration
+
 ![OIDC App Configuration](images/oidc-app-config.png)
+
+## 👥 Step 2 — Create RBAC Groups
+
+Created three role groups:
+
+RBAC-Admins
+
+RBAC-Analysts
+
+RBAC-Viewers
+
+Users were assigned based on role.
+
+📸 RBAC Groups Created
+
+![RBAC Groups](images/rbac-groups.png)
