@@ -171,6 +171,28 @@ Add policy rule restrictions per role
 
 Build sample protected API
 
+## 🏗️ Architecture Diagram
+
+🔄 OIDC Authorization Code Flow with RBAC Claim Injection
+
+sequenceDiagram
+    participant User
+    participant Browser
+    participant Okta
+    participant AuthServer as Authorization Server
+    participant App as Web Application
+
+    User->>Browser: Access Application
+    Browser->>Okta: /authorize (Authorization Code Request)
+    Okta->>User: Login + MFA
+    Okta->>AuthServer: Evaluate Access Policy
+    AuthServer->>AuthServer: Inject groups claim (RBAC-* filter)
+    Okta->>Browser: Redirect with Authorization Code
+    Browser->>Okta: /token (Code Exchange)
+    Okta->>Browser: ID Token (with groups claim)
+    Browser->>App: Send ID Token
+    App->>App: Enforce RBAC Authorization
+
 👩‍💻 Author
 
 Brianna Wandt
