@@ -84,6 +84,7 @@ Included in: Any scope
 This dynamically injects only RBAC-related groups into the ID token.
 
 📸 Custom Claim Configuration
+
 ![Groups Claim Configuration](images/groups-claim-config.png)
 
 ## 🔄 Step 5 — Authorization Code Flow
