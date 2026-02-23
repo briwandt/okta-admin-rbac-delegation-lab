@@ -99,17 +99,14 @@ openid profile email groups
 
 Returned authorization code was exchanged for ID Token.
 
-📸 Token Preview
-
-![Token Groups Preview](images/token-preview-groups.png)
-
 ## 🔍 Step 6 — Token Validation
 
 Using Okta Token Preview and JWT decoding, verified the ID token contains the RBAC group claim.
 
-📸 Decoded ID Token (Payload)
+📸 Token Preview
 
-![Decoded ID Token with RBAC Claim](images/token-with-group-claim.png)
+![Token Groups Preview](images/token-preview-groups.png)
+
 🧾 Example Token Payload
 {
   "sub": "00uzx9iyow9tKeo5u697",
@@ -117,6 +114,7 @@ Using Okta Token Preview and JWT decoding, verified the ID token contains the RB
   "preferred_username": "briannawandt@gmail.com",
   "groups": ["RBAC-Viewers"]
 }
+
 ✅ Validation Results
 
 ✔ Authorization Code flow working
