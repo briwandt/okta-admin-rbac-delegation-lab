@@ -107,13 +107,16 @@ Using Okta Token Preview and JWT decoding, verified the ID token contains the RB
 
 ![Token Groups Preview](images/token-preview-groups.png)
 
-🧾 Example Token Payload
+## 🧾 Example Token Payload (Redacted)
+
+```json
 {
-  "sub": "00uzx9iyow9tKeo5u697",
-  "email": "briannawandt@gmail.com",
-  "preferred_username": "briannawandt@gmail.com",
+  "sub": "00u…697",
+  "email": "user@example.com",
+  "preferred_username": "user@example.com",
   "groups": ["RBAC-Viewers"]
 }
+```
 
 ✅ Validation Results
 
