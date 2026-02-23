@@ -171,8 +171,9 @@ Build sample protected API
 
 ## 🏗️ Architecture Diagram
 
-🔄 OIDC Authorization Code Flow with RBAC Claim Injection
+## 🔄 OIDC Authorization Code Flow with RBAC Claim Injection
 
+```mermaid
 sequenceDiagram
     participant User
     participant Browser
@@ -190,7 +191,7 @@ sequenceDiagram
     Okta->>Browser: ID Token (with groups claim)
     Browser->>App: Send ID Token
     App->>App: Enforce RBAC Authorization
-
+```
 👩‍💻 Author
 
 Brianna Wandt
