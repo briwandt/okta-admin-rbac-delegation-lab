@@ -1,4 +1,9 @@
 ## 🛡️ Okta OIDC RBAC Authorization Lab
+
+## 📘 Extended Technical Write-Up
+
+🔗 [View Full Technical Breakdown in Notion](https://reliable-bougon-dc6.notion.site/OIDC-Authorization-Code-Flow-with-RBAC-Based-Token-Claims-310bb6ca18768028901aeae7cbacdf29?source=copy_link)
+
 ## 🔐 Role-Based Access Control (RBAC) with OIDC & Custom Claims
 
 This lab demonstrates how to implement group-based authorization using:
