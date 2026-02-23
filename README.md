@@ -14,3 +14,15 @@ Group-to-role mapping
 JWT validation
 
 The goal was to dynamically inject RBAC group membership into an ID token and validate access logic based on that claim.
+
+## 🧠 Architecture Overview
+
+User authenticates via Okta (Authorization Code Flow)
+
+Okta issues ID Token
+
+Custom groups claim is injected
+
+Application reads group claim
+
+Authorization logic is enforced based on group membership
