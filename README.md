@@ -99,3 +99,6 @@ openid profile email groups
 
 Returned authorization code was exchanged for ID Token.
 
+📸 Token Preview
+
+![Token Groups Preview](images/token-preview-groups.png)
